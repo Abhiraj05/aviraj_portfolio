@@ -6,10 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sansserif: ['Montserrat', 'sans-serif'],
+      },
       colors: {
-        neonYellow: '#D9FF00',  // Neon yellow
-        darkBlack: '#000000',   // Black
-        lightGray: '#AAAAAA',   // Light gray
+        neonYellow: '#D9FF00',
+        darkBlack: '#000000',
+        lightGray: '#AAAAAA',
       },
     },
   },
