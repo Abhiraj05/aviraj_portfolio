@@ -1,7 +1,11 @@
-const CustomiseButtons=({buttonname})=>{
+const CustomiseButtons=({buttonname,link,buttonimage})=>{
     return (
         <>
-        <button>{buttonname}</button>
+        <a href={link} className="text-mono uppercase">
+            <button>
+                <img src={buttonimage} alt="" />{buttonname}
+                </button>
+                </a>
         </>
     )
 }

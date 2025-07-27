@@ -4,11 +4,11 @@ function Body() {
     <>
       <div className=" flex justify-around items-center gap-7 mt-24  ">
         <div>
-          <div className="text-[#000000] font-['Montserrat', 'sans-serif'] font-extrabold uppercase text-8xl tracking-tight">
-            <h3>aviraj</h3>
+          <div className="text-[#000000] font-['Montserrat', 'sans-serif'] font-extrabold uppercase text-9xl tracking-tight">
+            <h3>abhiraj</h3>
             <h3>shilkar</h3>
           </div>
-          <CustomiseButtons buttonname="visit linkdin"></CustomiseButtons>
+          <CustomiseButtons link={"https://openai.com/index/chatgpt/"} buttonname="visit linkdin" className=""></CustomiseButtons>
         </div>
         <div>
           <p>
