@@ -7,7 +7,7 @@ function Body() {
     <>
       <div className=" md:flex sm:flex-wrap md:justify-around md:items-center md:gap-7 mt-24  ">
         <div>
-          <div className="text-[#000000] font-['Montserrat', 'sans-serif'] font-extrabold uppercase md:text-9xl tracking-tight">
+          <div className="text-[#000000] font-['Montserrat', 'sans-serif'] font-extrabold uppercase md:text-8xl tracking-tight">
             <h3>abhiraj</h3>
             <h3>shilkar</h3>
           </div>
