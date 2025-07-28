@@ -5,20 +5,24 @@ import Facebook from "../assets/Facebook.svg";
 import bg from "../assets/img.jpg";
 import NavBar from "../components/Navbar";
 import Grid from "../components/Grid";
-import img1 from "../assets/IMG_0152.JPG"
-import img2 from "../assets/astronut.jpg"
-import img3 from "../assets/LH_Wallpaper.png"
-import img4 from "../assets/M351310.jpg"
-import img5 from "../assets/M351781.jpg"
-import img6 from "../assets/M351790.jpg"
-import img7 from "../assets/M35131010.jpg"
+import img1 from "../assets/IMG_0152.JPG";
+import img2 from "../assets/astronut.jpg";
+import img3 from "../assets/LH_Wallpaper.png";
+import img4 from "../assets/M351310.jpg";
+import img5 from "../assets/M351781.jpg";
+import img6 from "../assets/M351790.jpg";
+import img7 from "../assets/M35131010.jpg";
 import Dottedline from "../components/Dottedline";
-
+import { motion } from "framer-motion";
 
 function Home() {
   return (
     <>
-      <div className="relative w-full h-screen overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 4 }}
+      >  <div className="relative w-full h-screen overflow-hidden">
         <img
           className="absolute inset-0 w-full h-full object-cover"
           src={bg}
@@ -26,55 +30,69 @@ function Home() {
         />
         <div className="absolute inset-0 flex flex-col md:bg-black/30 bg-black/20">
           <NavBar></NavBar>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 5 }}
+          >
+            <div className="flex flex-col justify-center md:items-start md:mt-36 mt-36 md:px-36  items-center ">
+              <div className="text-white font-['Montserrat', 'sans-serif'] font-extrabold text-center uppercase md:text-[150px] tracking-wider text-8xl">
+                <h3>avi</h3>
+                <h3>raj</h3>
+                <p className="md:text-[22px] text-[15px] pt-4 text-[#ffe600]">
+                  an fineart artist
+                </p>
+              </div>
 
-          <div className="flex flex-col justify-center md:items-start md:mt-36 mt-36 md:px-36  items-center ">
-            <div className="text-white font-['Montserrat', 'sans-serif'] font-extrabold text-center uppercase md:text-[150px] tracking-wider text-8xl">
-              <h3>avi</h3>
-              <h3>raj</h3>
-              <p className="md:text-[22px] text-[15px] pt-4 text-[#ffe600]">
-                an fineart artist
-              </p>
+              <div className="mt-10 md:pl-18 flex justify-center items-center gap-3 md:gap-5">
+                <CustomiseButtons
+                  buttonimage={Linkdin}
+                  link={"https://openai.com/index/chatgpt/"}
+                  // buttonname="visit linkdin"
+                />
+
+                <CustomiseButtons
+                  buttonimage={Instagram}
+                  link={"https://openai.com/index/chatgpt/"}
+                  // buttonname="visit instagram"
+                />
+                <CustomiseButtons
+                  buttonimage={Facebook}
+                  link={"https://openai.com/index/chatgpt/"}
+                  // buttonname="visit instagram"
+                />
+              </div>
             </div>
-
-            <div className="mt-10 md:pl-18 flex justify-center items-center gap-3 md:gap-5">
-              <CustomiseButtons
-                buttonimage={Linkdin}
-                link={"https://openai.com/index/chatgpt/"}
-                // buttonname="visit linkdin"
-              />
-
-              <CustomiseButtons
-                buttonimage={Instagram}
-                link={"https://openai.com/index/chatgpt/"}
-                // buttonname="visit instagram"
-              />
-              <CustomiseButtons
-                buttonimage={Facebook}
-                link={"https://openai.com/index/chatgpt/"}
-                // buttonname="visit instagram"
-              />
-            </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
-       <Dottedline type={"my work"}></Dottedline>
-      <Grid image1={img1} 
-      image2={img1}
-      image3={img1}
-      image4={img4}
-      image5={img2}
-      image6={img2}
-      image7={img7}
+      </div></motion.div>
+
+    
+
+      <Dottedline type={"my work"}></Dottedline>
+      <Grid
+        image1={img1}
+        image2={img1}
+        image3={img1}
+        image4={img4}
+        image5={img2}
+        image6={img2}
+        image7={img7}
       ></Grid>
-       <Dottedline type={"contact"}></Dottedline>
+      <Dottedline type={"contact"}></Dottedline>
       <div className="text-center mt-10 md:px-10 px-4.5">
         <form action="" className="bg-[#ffe600]">
-          <div><input className="bg-white" type="text"  placeholder="your name"/></div>
-          <div><input type="text" /></div>
-          <div><input type="text" /></div>
+          <div>
+            <input className="bg-white" type="text" placeholder="your name" />
+          </div>
+          <div>
+            <input type="text" />
+          </div>
+          <div>
+            <input type="text" />
+          </div>
         </form>
-       </div>
-
+      </div>
     </>
   );
 }
