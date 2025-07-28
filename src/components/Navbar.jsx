@@ -1,11 +1,11 @@
 function NavBar(){
     return(
         <>
-<nav className="flex md:justify-around  justify-between md:gap-[680px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white ">
+<nav className="flex md:justify-around  justify-between md:gap-[580px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white ">
             <div>
               <a
-                href=""
-                className="text-white font-['Montserrat', 'sans-serif'] font-bold uppercase md:text-xl text-[18px] tracking-tight"
+                href="home.html"
+                className="text-white font-['Montserrat', 'sans-serif'] font-bold uppercase md:text-xl text-[18px] tracking-tight first-letter:text-[#ffe600]"
               >
                 aviraj
               </a>
