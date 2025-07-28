@@ -28,7 +28,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    ScrollReveal().reveal(".form-element", {
+    ScrollReveal().reveal(".footer-element", {
       delay: 400,
       duration: 800,
       origin: "bottom",
@@ -54,7 +54,7 @@ function Home() {
             <NavBar></NavBar>
             <div className="flex flex-col justify-center md:items-start md:mt-36 mt-36 md:px-36  items-center my-element">
               <div className="text-white font-['Montserrat', 'sans-serif'] font-extrabold text-center uppercase md:text-[150px] tracking-wider text-8xl">
-                <h3>avi</h3>
+                <h3> &#9398;vi</h3>
                 <h3>raj</h3>
                 <p className="md:text-[22px] text-[15px] pt-4 text-[#ffe600]">
                   an fineart artist
@@ -84,7 +84,7 @@ function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 3 }}
       >
-        <Dottedline type={"my work"}></Dottedline>
+        <Dottedline ide={"link1"} type={"my work"}></Dottedline>
         <Grid
           image1={img1}
           image2={img1}
@@ -95,23 +95,54 @@ function Home() {
           image7={img7}
         ></Grid>
       </motion.div>
-      <Dottedline type={"contact"}></Dottedline>
-      <div className="text-center mt-10 mb-10 md:px-10 px-4.5 form-element">
-        <form action="#">
-          <div className="mb-6">
-            <input className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm" type="text" placeholder="your name" />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 3 }}
+      >
+        <Dottedline ide={"link2"} type={"contact"}></Dottedline>
+        <div className="text-center mt-10 mb-10 md:px-10 px-4.5 my-element">
+          <form action="#">
+            <div className="mb-6">
+              <input
+                className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
+                type="text"
+                placeholder="your name"
+              />
+            </div>
+            <div className="mb-6">
+              <input
+                className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
+                type="text"
+                placeholder="your email"
+              />
+            </div>
+            <div className="mb-6">
+              <input
+                className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
+                type="text"
+                placeholder="your message"
+              />
+            </div>
+            <div>
+              <button className="bg-[#F3273D] px-[142px] py-2 capitalize text-white font-['Montserrat', 'sans-serif']  text-[18px] rounded-sm">
+                submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <footer className="mt-10 bg-[#02589b] pt-10 footer-element">
+          <h3 className="text-white font-['Montserrat', 'sans-serif'] font-bold uppercase md:text-[30px] text-[20px] tracking-tight md:pl-22 pl-10 mb-10">
+            {" "}
+            &#9398;viraj
+          </h3>
+          <div className="text-center pb-4">
+            <p className="text-white capitalize md:text-[14.5px] text-[13px]">
+              &copy;all rights are reserved
+            </p>
           </div>
-          <div className="mb-6">
-            <input className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm" type="text" placeholder="your email" />
-          </div>
-          <div className="mb-6">
-            <input className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm" type="text" placeholder="your message" />
-          </div>
-          <div>
-            <button className="bg-[#ffe600] px-[142px] py-2 capitalize text-white font-['Montserrat', 'sans-serif']  text-[18px] rounded-sm">submit</button>
-          </div>
-        </form>
-      </div>
+        </footer>
+      </motion.div>
     </>
   );
 }

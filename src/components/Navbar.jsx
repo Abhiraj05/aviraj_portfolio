@@ -19,13 +19,14 @@ function NavBar(){
                 href="home.html"
                 className="text-white font-['Montserrat', 'sans-serif'] font-bold uppercase md:text-xl text-[18px] tracking-tight first-letter:text-[#ffe600]"
               >
-                aviraj
+                  &#9398;viraj
               </a>
             </div>
             <div>
               <ul className="flex justify-center items-center md:gap-14 gap-6 text-white font-mono font-light uppercase md:text-xl tracking-tight">
-                <li>my works</li>
-                <li>resume</li>
+                <a href="#link1" className="hover:underline"><li className="">my works</li></a>
+                <a href="#link2"><li className="hover:underline">contact</li></a>
+                {/* <li>resume</li> */}
               </ul>
             </div>
           </nav>
