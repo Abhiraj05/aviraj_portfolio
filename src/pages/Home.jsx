@@ -12,18 +12,18 @@ import img4 from "../assets/M351310.jpg"
 import img5 from "../assets/M351781.jpg"
 import img6 from "../assets/M351790.jpg"
 import img7 from "../assets/M35131010.jpg"
+import Dottedline from "../components/Dottedline";
 
 
 function Home() {
   return (
     <>
-      <div className="relative w-full h-screen ">
+      <div className="relative w-full h-screen overflow-hidden">
         <img
           className="absolute inset-0 w-full h-full object-cover"
           src={bg}
           alt=""
         />
-
         <div className="absolute inset-0 flex flex-col md:bg-black/30 bg-black/20">
           <NavBar></NavBar>
 
@@ -57,20 +57,24 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#292929] pt-10 md:px-20 text-center   md:text-left">
-        <h3 className="uppercase text-white font-['Montserrat', 'sans-serif'] font-extrabold mt-3.5 md:pl-20 md:text-4xl  text-2xl tracking-wide">
-          my work
-        </h3>
-        <div className="border-[0.2px] border-dashed mt-4 border-white mx-11"></div>
-      </div>
+       <Dottedline type={"my work"}></Dottedline>
       <Grid image1={img1} 
       image2={img1}
       image3={img1}
       image4={img4}
       image5={img2}
-      image6={img6}
+      image6={img2}
       image7={img7}
       ></Grid>
+       <Dottedline type={"contact"}></Dottedline>
+      <div className="text-center mt-10 md:px-10 px-4.5">
+        <form action="" className="bg-[#ffe600]">
+          <div><input className="bg-white" type="text"  placeholder="your name"/></div>
+          <div><input type="text" /></div>
+          <div><input type="text" /></div>
+        </form>
+       </div>
+
     </>
   );
 }
