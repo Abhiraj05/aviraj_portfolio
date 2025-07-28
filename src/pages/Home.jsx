@@ -6,7 +6,7 @@ import bg from "../assets/img.jpg";
 import NavBar from "../components/Navbar";
 import Grid from "../components/Grid";
 import img1 from "../assets/IMG_0152.JPG"
-import img2 from "../assets/JAPAN WALLPAPER 1.jpg"
+import img2 from "../assets/astronut.jpg"
 import img3 from "../assets/LH_Wallpaper.png"
 import img4 from "../assets/M351310.jpg"
 import img5 from "../assets/M351781.jpg"
@@ -64,10 +64,10 @@ function Home() {
         <div className="border-[0.2px] border-dashed mt-4 border-white mx-11"></div>
       </div>
       <Grid image1={img1} 
-      image2={img2}
-      image3={img3}
+      image2={img1}
+      image3={img1}
       image4={img4}
-      image5={img5}
+      image5={img2}
       image6={img6}
       image7={img7}
       ></Grid>
