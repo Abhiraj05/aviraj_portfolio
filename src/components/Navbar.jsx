@@ -1,7 +1,19 @@
+import React,{ useEffect } from "react";
+import ScrollReveal from 'scrollreveal';
+
 function NavBar(){
+    useEffect(() => {
+    ScrollReveal().reveal('.nav-element', {
+      delay: 300,
+      duration: 800,
+      origin: 'top',
+      distance: '40px',
+    });
+    
+  }, []);
     return(
         <>
-<nav className="flex md:justify-around  justify-between md:gap-[580px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white ">
+<nav className="flex md:justify-around  justify-between md:gap-[580px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white nav-element">
             <div>
               <a
                 href="home.html"

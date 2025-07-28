@@ -2,7 +2,7 @@ import CustomiseButtons from "../components/CustomiseButtons";
 import Linkdin from "../assets/Linkdin.svg";
 import Instagram from "../assets/instagram.svg";
 import Facebook from "../assets/Facebook.svg";
-import bg from "../assets/img.jpg";
+import backgroundimage from "../assets/img.jpg";
 import NavBar from "../components/Navbar";
 import Grid from "../components/Grid";
 import img1 from "../assets/IMG_0152.JPG";
@@ -14,28 +14,45 @@ import img6 from "../assets/M351790.jpg";
 import img7 from "../assets/M35131010.jpg";
 import Dottedline from "../components/Dottedline";
 import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 function Home() {
+  useEffect(() => {
+    ScrollReveal().reveal(".my-element", {
+      delay: 400,
+      duration: 800,
+      origin: "bottom",
+      distance: "40px",
+    });
+  }, []);
+
+  useEffect(() => {
+    ScrollReveal().reveal(".form-element", {
+      delay: 400,
+      duration: 800,
+      origin: "bottom",
+      distance: "40px",
+    });
+  }, []);
+
   return (
     <>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 4 }}
-      >  <div className="relative w-full h-screen overflow-hidden">
-        <img
-          className="absolute inset-0 w-full h-full object-cover"
-          src={bg}
-          alt=""
-        />
-        <div className="absolute inset-0 flex flex-col md:bg-black/30 bg-black/20">
-          <NavBar></NavBar>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 5 }}
-          >
-            <div className="flex flex-col justify-center md:items-start md:mt-36 mt-36 md:px-36  items-center ">
+        transition={{ duration: 3 }}
+      >
+        {" "}
+        <div className="relative w-full h-screen overflow-hidden">
+          <img
+            className="absolute inset-0 w-full h-full object-cover"
+            src={backgroundimage}
+            alt=""
+          />
+          <div className="absolute inset-0 flex flex-col md:bg-black/30 bg-black/20">
+            <NavBar></NavBar>
+            <div className="flex flex-col justify-center md:items-start md:mt-36 mt-36 md:px-36  items-center my-element">
               <div className="text-white font-['Montserrat', 'sans-serif'] font-extrabold text-center uppercase md:text-[150px] tracking-wider text-8xl">
                 <h3>avi</h3>
                 <h3>raj</h3>
@@ -43,53 +60,55 @@ function Home() {
                   an fineart artist
                 </p>
               </div>
-
               <div className="mt-10 md:pl-18 flex justify-center items-center gap-3 md:gap-5">
                 <CustomiseButtons
                   buttonimage={Linkdin}
                   link={"https://openai.com/index/chatgpt/"}
-                  // buttonname="visit linkdin"
                 />
-
                 <CustomiseButtons
                   buttonimage={Instagram}
                   link={"https://openai.com/index/chatgpt/"}
-                  // buttonname="visit instagram"
                 />
                 <CustomiseButtons
                   buttonimage={Facebook}
                   link={"https://openai.com/index/chatgpt/"}
-                  // buttonname="visit instagram"
                 />
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
-      </div></motion.div>
+      </motion.div>
 
-    
-
-      <Dottedline type={"my work"}></Dottedline>
-      <Grid
-        image1={img1}
-        image2={img1}
-        image3={img1}
-        image4={img4}
-        image5={img2}
-        image6={img2}
-        image7={img7}
-      ></Grid>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 3 }}
+      >
+        <Dottedline type={"my work"}></Dottedline>
+        <Grid
+          image1={img1}
+          image2={img1}
+          image3={img1}
+          image4={img4}
+          image5={img2}
+          image6={img2}
+          image7={img7}
+        ></Grid>
+      </motion.div>
       <Dottedline type={"contact"}></Dottedline>
-      <div className="text-center mt-10 md:px-10 px-4.5">
-        <form action="" className="bg-[#ffe600]">
-          <div>
-            <input className="bg-white" type="text" placeholder="your name" />
+      <div className="text-center mt-10 mb-10 md:px-10 px-4.5 form-element">
+        <form action="#">
+          <div className="mb-6">
+            <input className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm" type="text" placeholder="your name" />
+          </div>
+          <div className="mb-6">
+            <input className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm" type="text" placeholder="your email" />
+          </div>
+          <div className="mb-6">
+            <input className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm" type="text" placeholder="your message" />
           </div>
           <div>
-            <input type="text" />
-          </div>
-          <div>
-            <input type="text" />
+            <button className="bg-[#ffe600] px-[142px] py-2 capitalize text-white font-['Montserrat', 'sans-serif']  text-[18px] rounded-sm">submit</button>
           </div>
         </form>
       </div>
