@@ -17,7 +17,7 @@ import Dottedline from "../components/Dottedline";
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import Pdfpreviewer from "../components/Pdfpreviewer";
+
 
 function Home() {
   useEffect(() => {
