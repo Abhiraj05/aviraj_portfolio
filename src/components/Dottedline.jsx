@@ -12,10 +12,10 @@ const Dottedline=({type,ide})=>{
     return(
         <>
     <div id={ide} className="bg-[#292929] pt-10  text-center md:text-left dotted-element">
-        <h3 className="uppercase text-white anton-font  font-medium mt-3.5 md:pl-20 md:text-4xl  text-2xl tracking-widest">
+        <h3 className="uppercase text-[#FFCDAD] anton-font  font-medium mt-3.5 md:pl-20 md:text-4xl  text-2xl tracking-widest">
           {type}
         </h3>
-        <div className="border-[0.2px] border-dashed mt-4 border-white mx-11 "></div>
+        <div className="border-[0.2px] border-dashed mt-4 border-[#FFCDAD] mx-11 "></div>
       </div>
         </>
     )

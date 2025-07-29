@@ -17,7 +17,7 @@ function NavBar(){
             <div>
               <a
                 href="home.html"
-                className="text-white anton-font font-light uppercase md:text-xl text-[18px] tracking-widest first-letter:text-[#ffe600]"
+                className="text-white anton-font font-light uppercase md:text-xl text-[18px] tracking-widest"
               >
                   aviraj
               </a>

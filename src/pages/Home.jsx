@@ -57,7 +57,7 @@ function Home() {
           <div className="absolute inset-0 flex flex-col md:bg-black/30 bg-black/20">
             <NavBar></NavBar>
             <div className="flex flex-col justify-center md:items-start md:mt-36 mt-36 md:px-36  items-center my-element">
-              <div className="text-white anton-font  text-center uppercase md:text-[150px] tracking-widest text-8xl">
+              <div className="text-white  anton-font  text-center uppercase md:text-[150px] tracking-widest text-8xl">
                 <h3 className="font-extrabold">avi</h3>
                 <h3 className="font-extrabold">raj</h3>
                 <p className="md:text-[22px] text-[15px] pt-4 text-[#ffe600] font-medium">
@@ -118,12 +118,12 @@ function Home() {
               placeholder3={"your message"}
         ></Form>
         <footer className="mt-10 bg-[#02589b] pt-10 footer-element">
-          <h3 className="text-white anton-font  font-medium uppercase md:text-[30px] text-[20px] tracking-widest md:pl-22 pl-10 mb-10">
+          <h3 className="text-[#FFCDAD] anton-font  font-medium uppercase md:text-[30px] text-[20px] tracking-widest text-center mb-10">
             {" "}
-            aviraj
+            aviraj shilkar
           </h3>
           <div className="text-center pb-4">
-            <p className="text-white capitalize md:text-[14.5px] text-[13px] inter-font flex justify-center items-center gap-2 tracking-wider">
+            <p className="text-[#FFCDAD] capitalize md:text-[14.5px] text-[12.5px] inter-font flex justify-center items-center gap-2 tracking-wider">
               {/* &copy;all rights are reserved */}
               made &hearts; with by <a href="https://in.linkedin.com/in/abhiraj-shilkar-408126217"><img src={Namelogo} alt="" /></a>
             </p>

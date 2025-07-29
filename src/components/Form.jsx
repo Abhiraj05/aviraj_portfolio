@@ -53,12 +53,12 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
               ></textarea>
             </div>
             <div>
-              <button type="submit" className="border-[#F3273D]  text-white border-2 px-[109px] py-2 capitalize  inter-font font-medium text-[16px] rounded-sm">
+              <button type="submit" className="border-[#FFCDAD]  text-[#FFCDAD] border-2 px-[109px] py-2 capitalize  inter-font font-medium text-[16px] rounded-sm">
               send message
               </button>
             </div>
           </form>
-          <div className="text-white mt-4">
+          <div className="text-[#FFCDAD] mt-4">
                <span>{result}</span>
           </div>
         </div>
