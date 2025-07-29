@@ -63,7 +63,7 @@ function Home() {
               <div className="mt-10 md:pl-18 flex justify-center items-center gap-3 md:gap-5">
                 <CustomiseButtons
                   buttonimage={Linkdin}
-                  link={"https://openai.com/index/chatgpt/"}
+                  link={"https://www.linkedin.com/in/aviraj-shilkar-a8ab34217/"}
                 />
                 <CustomiseButtons
                   buttonimage={Instagram}
@@ -71,7 +71,7 @@ function Home() {
                 />
                 <CustomiseButtons
                   buttonimage={Facebook}
-                  link={"https://openai.com/index/chatgpt/"}
+                  link={"https://www.facebook.com/share/1G9W5e8ZWk/"}
                 />
               </div>
             </div>
