@@ -3,6 +3,7 @@ import Linkdin from "../assets/Linkdin.svg";
 import Instagram from "../assets/instagram.svg";
 import Facebook from "../assets/Facebook.svg";
 import X from "../assets/x.svg";
+import Whatsapp from "../assets/Whatsapp.svg"
 import backgroundimage from "../assets/img.jpg";
 import NavBar from "../components/Navbar";
 import Grid from "../components/Grid";
@@ -62,7 +63,7 @@ function Home() {
                   an fineart artist
                 </p>
               </div>
-              <div className="mt-10 md:pl-18 flex justify-center items-center gap-3 md:gap-5">
+              <div className="mt-10 md:pl-12 flex justify-center items-center gap-3 md:gap-5">
                 <CustomiseButtons
                   buttonimage={Linkdin}
                   link={"https://www.linkedin.com/in/aviraj-shilkar-a8ab34217/"}
@@ -77,6 +78,10 @@ function Home() {
                 />
                 <CustomiseButtons
                   buttonimage={Facebook}
+                  link={"https://www.facebook.com/share/1G9W5e8ZWk/"}
+                />
+                  <CustomiseButtons
+                  buttonimage={Whatsapp}
                   link={"https://www.facebook.com/share/1G9W5e8ZWk/"}
                 />
               </div>
@@ -135,7 +140,7 @@ function Home() {
               ></textarea>
             </div>
             <div>
-              <button type="submit" className="bg-[#F3273D] px-[109px] py-2 capitalize text-white inter-font font-medium text-[16px] rounded-sm">
+              <button type="submit" className="border-[#F3273D]  text-white border-2 px-[109px] py-2 capitalize  inter-font font-medium text-[16px] rounded-sm">
               send message
               </button>
             </div>
