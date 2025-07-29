@@ -13,17 +13,17 @@ function NavBar(){
   }, []);
     return(
         <>
-<nav className="flex md:justify-around  justify-between md:gap-[580px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white nav-element">
+<nav className="flex md:justify-around  justify-between md:gap-[560px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white nav-element">
             <div>
               <a
                 href="home.html"
-                className="text-white font-['Montserrat', 'sans-serif'] font-bold uppercase md:text-xl text-[18px] tracking-tight first-letter:text-[#ffe600]"
+                className="text-white anton-font font-light uppercase md:text-xl text-[18px] tracking-widest first-letter:text-[#ffe600]"
               >
-                  &#9398;viraj
+                  aviraj
               </a>
             </div>
             <div>
-              <ul className="flex justify-center items-center md:gap-14 gap-6 text-white font-anton font-light uppercase md:text-xl tracking-tight">
+              <ul className="flex justify-center items-center md:gap-14 gap-6 text-white inter-font md:font-bold font-extrabold uppercase text-[13px] md:text-xl tracking-tight">
                 <a href="#link1" className="hover:underline"><li className="">my works</li></a>
                 <a href="#link2"><li className="hover:underline">contact</li></a>
                 {/* <li>resume</li> */}

@@ -53,10 +53,10 @@ function Home() {
           <div className="absolute inset-0 flex flex-col md:bg-black/30 bg-black/20">
             <NavBar></NavBar>
             <div className="flex flex-col justify-center md:items-start md:mt-36 mt-36 md:px-36  items-center my-element">
-              <div className="text-white font-anton font-extrabold text-center uppercase md:text-[150px] tracking-wider text-8xl">
-                <h3> &#9398;vi</h3>
-                <h3>raj</h3>
-                <p className="md:text-[22px] text-[15px] pt-4 text-[#ffe600]">
+              <div className="text-white anton-font  text-center uppercase md:text-[150px] tracking-widest text-8xl">
+                <h3 className="font-extrabold">avi</h3>
+                <h3 className="font-extrabold">raj</h3>
+                <p className="md:text-[22px] text-[15px] pt-4 text-[#ffe600] font-medium">
                   an fineart artist
                 </p>
               </div>
@@ -102,12 +102,14 @@ function Home() {
       >
         <Dottedline ide={"link2"} type={"contact"}></Dottedline>
         <div className="text-center mt-10 mb-10 md:px-10 px-4.5 my-element">
-          <form action="#">
+          <form action="https://api.web3forms.com/submit" method="POST">
+           <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"></input>
             <div className="mb-6">
               <input
                 className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
                 type="text"
                 placeholder="your name"
+                required
               />
             </div>
             <div className="mb-6">
@@ -115,29 +117,30 @@ function Home() {
                 className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
                 type="text"
                 placeholder="your email"
+                required
               />
             </div>
             <div className="mb-6">
-              <input
-                className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
+              <textarea
+                className="bg-white pl-3 w-85 h-22 pt-2 resize-none placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
                 type="text"
-                placeholder="your message"
-              />
+                placeholder="your message" required
+              ></textarea>
             </div>
             <div>
-              <button className="bg-[#F3273D] px-[142px] py-2 capitalize text-white font-['Montserrat', 'sans-serif']  text-[18px] rounded-sm">
-                submit
+              <button type="submit" className="bg-[#F3273D] px-[109px] py-2 capitalize text-white inter-font font-medium text-[16px] rounded-sm">
+              send message
               </button>
             </div>
           </form>
         </div>
         <footer className="mt-10 bg-[#02589b] pt-10 footer-element">
-          <h3 className="text-white font-['Montserrat', 'sans-serif'] font-bold uppercase md:text-[30px] text-[20px] tracking-tight md:pl-22 pl-10 mb-10">
+          <h3 className="text-white anton-font  font-medium uppercase md:text-[30px] text-[20px] tracking-widest md:pl-22 pl-10 mb-10">
             {" "}
-            &#9398;viraj
+            aviraj
           </h3>
           <div className="text-center pb-4">
-            <p className="text-white capitalize md:text-[14.5px] text-[13px]">
+            <p className="text-white capitalize md:text-[14.5px] text-[13px] inter-font">
               &copy;all rights are reserved
             </p>
           </div>
