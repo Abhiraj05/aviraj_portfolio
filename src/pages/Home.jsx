@@ -97,15 +97,14 @@ function Home() {
       >
         <Dottedline ide={"link1"} type={"my work"}></Dottedline>
         <Grid
-          image1={img1}
-          image2={img1}
-          image3={img1}
-          image4={img4}
-          image5={img2}
-          image6={img2}
-          image7={img7}
+          image1={img1} title1={"a"} descr1={"this is a"}
+          image2={img1} title2={"b"} descr2={"this is b"}
+          image3={img1} title3={"c"} descr3={"this is c"}
+          image4={img4} title4={"d"} descr4={"this is d"}
+          image5={img2} title5={"e"} descr5={"this is e"}
+          image6={img2} title6={"f"} descr6={"this is f"}
+          image7={img7} title7={"g"} descr7={"this is g"}
         ></Grid>
-        {/* <Pdfpreviewer></Pdfpreviewer> */}
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}

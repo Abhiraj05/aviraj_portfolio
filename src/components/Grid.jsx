@@ -1,7 +1,29 @@
 import React, { use, useEffect, useState } from "react";
 import ScrollReveal from "scrollreveal";
 
-const Grid = ({ image1, image2, image3, image4, image5, image6, image7 }) => {
+const Grid = ({
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  title1,
+  title2,
+  title3,
+  title4,
+  title5,
+  title6,
+  title7,
+  descr1,
+  descr2,
+  descr3,
+  descr4,
+  descr5,
+  descr6,
+  descr7,
+}) => {
   const [value, setvalue] = useState({
     div1: false,
     div2: false,
@@ -71,57 +93,98 @@ const Grid = ({ image1, image2, image3, image4, image5, image6, image7 }) => {
           onClick={() => changevalue("div1")}
         >
           {value.div1 && (
-            <p className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white text-[40px] anton-font">
-              hello
-            </p>
+        <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white ">
+              <div>
+                <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title1}</h3>
+                <p className="md:text-[20px] text-[13.5px] capitalize font-extralight">{descr1}</p>
+              </div>
+            </div>
           )}
-          <img src={image1} className={`rounded-sm ${value.div1? 'opacity-28': 'opacity-100'}`} alt="" />
+          <img
+            src={image1}
+            className={`rounded-sm ${
+              value.div1 ? "opacity-28" : "opacity-100"
+            }`}
+            alt=""
+          />
         </div>
         <div
           className="w-full h-full mb-6 md:mb-1 md:grid-element-t grid-element-l"
           onClick={() => changevalue("div2")}
         >
           {value.div2 && (
-            <p className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white text-[40px] anton-font">
-              hello
-            </p>
+          <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white ">
+              <div>
+                <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title2}</h3>
+                <p className="md:text-[20px] text-[13.5px] capitalize font-extralight">{descr2}</p>
+              </div>
+            </div>
           )}
-          <img src={image2} className={`rounded-sm ${value.div2? 'opacity-28': 'opacity-100'}`} alt="" />
+          <img
+            src={image2}
+            className={`rounded-sm ${
+              value.div2 ? "opacity-28" : "opacity-100"
+            }`}
+            alt=""
+          />
         </div>
         <div
           className="w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-r"
           onClick={() => changevalue("div3")}
         >
           {value.div3 && (
-            <p className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white text-[40px] anton-font">
-              hello
-            </p>
+        <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white ">
+              <div>
+                <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title3}</h3>
+                <p className="md:text-[20px] text-[13.5px] capitalize font-extralight">{descr3}</p>
+              </div>
+            </div>
           )}
-          <img src={image3} className={`rounded-sm ${value.div3? 'opacity-28': 'opacity-100'}`} alt="" />
+          <img
+            src={image3}
+            className={`rounded-sm ${
+              value.div3 ? "opacity-28" : "opacity-100"
+            }`}
+            alt=""
+          />
         </div>
         <div
           className="md:col-span-2 w-full h-full mb-6 md:mb-1 md:grid-element-r grid-element-l"
           onClick={() => changevalue("div4")}
         >
           {value.div4 && (
-            <p className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white text-[40px] anton-font">
-              hello
-            </p>
+        <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white ">
+              <div>
+                <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title4}</h3>
+                <p className="md:text-[20px] text-[13.5px] capitalize font-extralight">{descr4}</p>
+              </div>
+            </div>
           )}
-          <img src={image4} className={`rounded-sm ${value.div4? 'opacity-28': 'opacity-100'}`} alt="" />
+          <img
+            src={image4}
+            className={`rounded-sm ${
+              value.div4 ? "opacity-28" : "opacity-100"
+            }`}
+            alt=""
+          />
         </div>
         <div
           className="mb-6 md:mb-1 w-full h-full md:grid-element-l grid-element-r"
           onClick={() => changevalue("div5")}
         >
           {value.div5 && (
-            <p className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white text-[40px] anton-font">
-              hello
-            </p>
+        <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white ">
+              <div>
+                <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title5}</h3>
+                <p className="md:text-[20px] text-[13.5px] capitalize font-extralight">{descr5} </p>
+              </div>
+            </div>
           )}
           <img
             src={image5}
-            className={`h-[538.04px] w-[540px] rounded-sm ${value.div5? 'opacity-28': 'opacity-100'}`}
+            className={`h-[538.04px] w-[540px] rounded-sm ${
+              value.div5 ? "opacity-28" : "opacity-100"
+            }`}
             alt=""
           />
         </div>
@@ -130,13 +193,18 @@ const Grid = ({ image1, image2, image3, image4, image5, image6, image7 }) => {
           onClick={() => changevalue("div6")}
         >
           {value.div6 && (
-            <p className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white text-[40px] anton-font">
-              hello
-            </p>
+        <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white ">
+              <div>
+                <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title6}</h3>
+                <p className="md:text-[20px] text-[13.5px] capitalize font-extralight">{descr6}</p>
+              </div>
+            </div>
           )}
           <img
             src={image6}
-            className={`h-[538.04px] w-[540px] rounded-sm ${value.div6? 'opacity-28': 'opacity-100'}`}
+            className={`h-[538.04px] w-[540px] rounded-sm ${
+              value.div6 ? "opacity-28" : "opacity-100"
+            }`}
             alt=""
           />
         </div>
@@ -145,11 +213,20 @@ const Grid = ({ image1, image2, image3, image4, image5, image6, image7 }) => {
           onClick={() => changevalue("div7")}
         >
           {value.div7 && (
-            <p className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white text-[40px] anton-font">
-              hello
-            </p>
+        <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-white ">
+              <div>
+                <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title7}</h3>
+                <p className="md:text-[20px] text-[13.5px] capitalize font-extralight">{descr7}</p>
+              </div>
+            </div>
           )}
-          <img src={image7} className={`rounded-sm ${value.div7? 'opacity-28': 'opacity-100'}`} alt="" />
+          <img
+            src={image7}
+            className={`rounded-sm ${
+              value.div7 ? "opacity-28" : "opacity-100"
+            }`}
+            alt=""
+          />
         </div>
       </div>
     </>
