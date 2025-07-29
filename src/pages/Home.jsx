@@ -18,7 +18,8 @@ import Dottedline from "../components/Dottedline";
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-
+import Form from "../components/Form";
+import Namelogo from "../assets/namelogo.svg"
 
 function Home() {
   useEffect(() => {
@@ -112,47 +113,19 @@ function Home() {
         transition={{ duration: 3 }}
       >
         <Dottedline ide={"link2"} type={"contact"}></Dottedline>
-        <div className="text-center mt-10 mb-10 md:px-10 px-4.5 my-element">
-          <form action="https://api.web3forms.com/submit" method="POST">
-           <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"></input>
-            <div className="mb-6">
-              <input
-                className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
-                type="text"
-                placeholder="your name"
-                required
-              />
-            </div>
-            <div className="mb-6">
-              <input
-                className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
-                type="text"
-                placeholder="your email"
-                required
-              />
-            </div>
-            <div className="mb-6">
-              <textarea
-                className="bg-white pl-3 w-85 h-22 pt-2 resize-none placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm"
-                type="text"
-                placeholder="your message" required
-              ></textarea>
-            </div>
-            <div>
-              <button type="submit" className="border-[#F3273D]  text-white border-2 px-[109px] py-2 capitalize  inter-font font-medium text-[16px] rounded-sm">
-              send message
-              </button>
-            </div>
-          </form>
-        </div>
+        <Form placeholder1={"your name"}
+              placeholder2={"your email"}
+              placeholder3={"your message"}
+        ></Form>
         <footer className="mt-10 bg-[#02589b] pt-10 footer-element">
           <h3 className="text-white anton-font  font-medium uppercase md:text-[30px] text-[20px] tracking-widest md:pl-22 pl-10 mb-10">
             {" "}
             aviraj
           </h3>
           <div className="text-center pb-4">
-            <p className="text-white capitalize md:text-[14.5px] text-[13px] inter-font">
-              &copy;all rights are reserved
+            <p className="text-white capitalize md:text-[14.5px] text-[13px] inter-font flex justify-center items-center gap-2 tracking-wider">
+              {/* &copy;all rights are reserved */}
+              made &hearts; with by <a href="https://in.linkedin.com/in/abhiraj-shilkar-408126217"><img src={Namelogo} alt="" /></a>
             </p>
           </div>
         </footer>
