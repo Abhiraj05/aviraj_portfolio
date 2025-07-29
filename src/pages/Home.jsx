@@ -16,6 +16,7 @@ import Dottedline from "../components/Dottedline";
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import Pdfpreviewer from "../components/Pdfpreviewer";
 
 function Home() {
   useEffect(() => {
@@ -94,6 +95,7 @@ function Home() {
           image6={img2}
           image7={img7}
         ></Grid>
+        {/* <Pdfpreviewer></Pdfpreviewer> */}
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}
