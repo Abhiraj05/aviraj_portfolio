@@ -2,6 +2,7 @@ import CustomiseButtons from "../components/CustomiseButtons";
 import Linkdin from "../assets/Linkdin.svg";
 import Instagram from "../assets/instagram.svg";
 import Facebook from "../assets/Facebook.svg";
+import X from "../assets/x.svg";
 import backgroundimage from "../assets/img.jpg";
 import NavBar from "../components/Navbar";
 import Grid from "../components/Grid";
@@ -69,6 +70,10 @@ function Home() {
                 <CustomiseButtons
                   buttonimage={Instagram}
                   link={"https://openai.com/index/chatgpt/"}
+                />
+                 <CustomiseButtons
+                  buttonimage={X}
+                  link={"https://www.facebook.com/share/1G9W5e8ZWk/"}
                 />
                 <CustomiseButtons
                   buttonimage={Facebook}
