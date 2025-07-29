@@ -23,7 +23,7 @@ function NavBar(){
               </a>
             </div>
             <div>
-              <ul className="flex justify-center items-center md:gap-14 gap-6 text-white font-mono font-light uppercase md:text-xl tracking-tight">
+              <ul className="flex justify-center items-center md:gap-14 gap-6 text-white font-anton font-light uppercase md:text-xl tracking-tight">
                 <a href="#link1" className="hover:underline"><li className="">my works</li></a>
                 <a href="#link2"><li className="hover:underline">contact</li></a>
                 {/* <li>resume</li> */}
