@@ -102,7 +102,7 @@ function Home() {
         <div className="md:px-10  text-center mt-7 px-5.5 md:text-[25px] text-[16px] text-[#FFCDAD] tuffy-font  md:tracking-widest tracking-wide footer-element capitalize">
           <p className="text-justify">Hello, everyone ! My name is Aviraj Shilkar, and I am a passionate graphic designer and video editor. I love turning graphics into beautiful designs and transforming videos into engaging audiovisual art. I am committed to creating visually appealing and effective content that communicates ideas clearly and creatively.</p>
         </div>
-        <Dottedline ide={"link1"} type={"my work"}></Dottedline>
+        <Dottedline ide={"link1"} type={"my works"}></Dottedline>
         <Grid
           image1={img3} title1={"jbl"} descr1={"hoarding ad"}
           image2={img2} title2={"jbl"} descr2={"hoarding ad"}
