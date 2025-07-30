@@ -1,6 +1,6 @@
 # Aviraj's Portfolio
 
-## This portfolio website built using React, Tailwind CSS, and Vite.
+## This portfolio website is built using React, Tailwind CSS, and Vite.
 
 ## Steps to clone a repository
 ```
