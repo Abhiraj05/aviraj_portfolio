@@ -99,7 +99,7 @@ function Home() {
         transition={{ duration: 3 }}
       >
         <Dottedline  type={"about me"}></Dottedline>
-        <div className="md:px-10  text-center mt-8 px-5.5 md:text-[25px] text-[16px] text-[#FFCDAD] font-sans tracking-wide footer-element capitalize">
+        <div className="md:px-10  text-center mt-7 px-5.5 md:text-[25px] text-[16px] text-[#FFCDAD] tuffy-font  tracking-widest footer-element capitalize">
           <p className="text-justify">Hello, everyone ! My name is Aviraj Shilkar, and I am a passionate graphic designer and video editor. I love turning graphics into beautiful designs and transforming videos into engaging audiovisual art. I am committed to creating visually appealing and effective content that communicates ideas clearly and creatively.</p>
         </div>
         <Dottedline ide={"link1"} type={"my work"}></Dottedline>
@@ -129,7 +129,7 @@ function Home() {
             aviraj shilkar
           </h3>
           <div className="text-center pb-4">
-            <p className="text-[#FFCDAD] capitalize md:text-[14.5px] text-[12.5px] inter-font flex justify-center items-center gap-2 tracking-wider">
+            <p className="text-[#FFCDAD] capitalize md:text-[14.5px] text-[12.8px] tuffy-font flex justify-center items-center gap-2 tracking-wider">
               {/* &copy;all rights are reserved */}
               made with &hearts; by <a href="https://in.linkedin.com/in/abhiraj-shilkar-408126217"><img src={Namelogo} alt="" /></a>
             </p>
