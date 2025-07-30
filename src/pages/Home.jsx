@@ -3,7 +3,7 @@ import Linkdin from "../assets/Linkdin.svg";
 import Instagram from "../assets/instagram.svg";
 import Facebook from "../assets/Facebook.svg";
 import X from "../assets/x.svg";
-import Whatsapp from "../assets/Whatsapp.svg"
+import Whatsapp from "../assets/whatsapp.svg"
 import backgroundimage from "../assets/img.jpg";
 import NavBar from "../components/Navbar";
 import Grid from "../components/Grid";
