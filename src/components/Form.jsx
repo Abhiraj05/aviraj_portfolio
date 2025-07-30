@@ -7,7 +7,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "18a6510f-1597-4881-ab34-ea6319437040");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -29,7 +29,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
           <form  onSubmit={onSubmit}>
            
             <div className="mb-6">
-              <input
+              <input name="name"
                 className="bg-[#4e4e4e] pl-3 w-80 md:w-85 h-12 placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
                 type="text"
                 placeholder={placeholder1}
@@ -37,7 +37,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
               />
             </div>
             <div className="mb-6">
-              <input
+              <input name="email"
                 className="bg-[#4e4e4e] pl-3 w-80 md:w-85 h-12 placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
                 type="email"
                 placeholder={placeholder2}
@@ -45,7 +45,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
               />
             </div>
             <div className="mb-6">
-              <textarea
+              <textarea name="message"
                 className="bg-[#4a4949] pl-3 w-80 md:w-85 h-22 pt-2 resize-none  placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
                 type="text"
                 placeholder={placeholder3} 
