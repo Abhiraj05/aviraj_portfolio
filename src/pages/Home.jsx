@@ -125,7 +125,7 @@ function Home() {
         ></Form>
         <footer className="mt-10 bg-[#02589b] pt-10 footer-element">
           <h3 className="text-[#FFCDAD] anton-font  font-medium uppercase md:text-[30px] text-[20px] tracking-widest text-center mb-10">
-            {" "}
+            
             aviraj shilkar
           </h3>
           <div className="text-center pb-4">

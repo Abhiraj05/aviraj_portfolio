@@ -30,7 +30,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
            
             <div className="mb-6">
               <input
-                className="bg-[#4e4e4e] pl-3 w-85 h-12 placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
+                className="bg-[#4e4e4e] pl-3 w-80 md:w-85 h-12 placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
                 type="text"
                 placeholder={placeholder1}
                 required
@@ -38,7 +38,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
             </div>
             <div className="mb-6">
               <input
-                className="bg-[#4e4e4e] pl-3 w-85 h-12 placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
+                className="bg-[#4e4e4e] pl-3 w-80 md:w-85 h-12 placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
                 type="email"
                 placeholder={placeholder2}
                 required
@@ -46,7 +46,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
             </div>
             <div className="mb-6">
               <textarea
-                className="bg-[#4a4949] pl-3 w-85 h-22 pt-2 resize-none  placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
+                className="bg-[#4a4949] pl-3 w-80 md:w-85 h-22 pt-2 resize-none  placeholder:capitalize placeholder:tuffy-font placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  tuffy-font tracking-wide"
                 type="text"
                 placeholder={placeholder3} 
                 required
@@ -58,7 +58,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
               </button>
             </div>
           </form>
-          <div className="text-[#FFCDAD] mt-4">
+          <div className="text-[#FFCDAD] mt-4 tuffy-font">
                <span>{result}</span>
           </div>
         </div>
