@@ -110,7 +110,7 @@ function Home() {
           image4={img4} title4={"jbl"} descr4={"social media (insta post ad)"}
           image5={img5} title5={"jbl"} descr5={"website pop-up ad"}
           image6={img6} title6={"spiderman pavitr prabhakar"} descr6={"vector art"}
-          image7={img7} title7={"salaar"} descr7={"poster design"}
+          image7={img7} title7={"salaar & kalki"} descr7={"poster design"}
         ></Grid>
       </motion.div>
       <motion.div
