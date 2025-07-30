@@ -30,7 +30,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
            
             <div className="mb-6">
               <input
-                className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm focus:outline-[#02589b]"
+                className="bg-[#4e4e4e] pl-3 w-85 h-12 placeholder:capitalize placeholder:font-mono placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  font-mono"
                 type="text"
                 placeholder={placeholder1}
                 required
@@ -38,7 +38,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
             </div>
             <div className="mb-6">
               <input
-                className="bg-white pl-3 w-85 h-12 placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm focus:outline-[#02589b]"
+                className="bg-[#4e4e4e] pl-3 w-85 h-12 placeholder:capitalize placeholder:font-mono placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  font-mono"
                 type="email"
                 placeholder={placeholder2}
                 required
@@ -46,7 +46,7 @@ const Form = ({ placeholder1, placeholder2, placeholder3 }) => {
             </div>
             <div className="mb-6">
               <textarea
-                className="bg-white pl-3 w-85 h-22 pt-2 resize-none placeholder:capitalize placeholder:font-['Montserrat', 'sans-serif'] rounded-sm focus:outline-[#02589b]"
+                className="bg-[#4a4949] pl-3 w-85 h-22 pt-2 resize-none  placeholder:capitalize placeholder:font-mono placeholder:text-[#FFCDAD] rounded-sm focus:outline-[#FFCDAD] text-[#FFCDAD]  font-mono"
                 type="text"
                 placeholder={placeholder3} 
                 required

@@ -40,6 +40,8 @@ function Home() {
     });
   }, []);
 
+
+
   return (
     <>
       <motion.div
@@ -96,6 +98,10 @@ function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 3 }}
       >
+        <Dottedline  type={"about me"}></Dottedline>
+        <div className="md:px-10  text-center mt-8 px-5.5 md:text-[25px] text-[16px] text-[#FFCDAD] font-sans tracking-wide footer-element capitalize">
+          <p className="text-justify">Hello, everyone ! My name is Aviraj Shilkar, and I am a passionate graphic designer and video editor. I love turning graphics into beautiful designs and transforming videos into engaging audiovisual art. I am committed to creating visually appealing and effective content that communicates ideas clearly and creatively.</p>
+        </div>
         <Dottedline ide={"link1"} type={"my work"}></Dottedline>
         <Grid
           image1={img3} title1={"jbl"} descr1={"hoarding ad"}

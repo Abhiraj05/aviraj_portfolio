@@ -13,7 +13,7 @@ function NavBar(){
   }, []);
     return(
         <>
-<nav className="flex md:justify-around  justify-between md:gap-[560px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white nav-element">
+<nav className="flex md:justify-around  justify-between md:gap-[756px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white nav-element">
             <div>
               <a
                 href="home.html"
@@ -26,7 +26,6 @@ function NavBar(){
               <ul className="flex justify-center items-center md:gap-14 gap-6 text-white anton-font md:font-light font-extralight capitalize text-[13px] md:text-xl tracking-widest">
                 <a href="#link1" className="hover:underline"><li className="">my works</li></a>
                 <a href="#link2"><li className="hover:underline">contact</li></a>
-                {/* <li>resume</li> */}
               </ul>
             </div>
           </nav>
