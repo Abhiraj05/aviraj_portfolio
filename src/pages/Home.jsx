@@ -7,13 +7,13 @@ import Whatsapp from "../assets/Whatsapp.svg"
 import backgroundimage from "../assets/img.jpg";
 import NavBar from "../components/Navbar";
 import Grid from "../components/Grid";
-import img1 from "../assets/IMG_0152.JPG";
-import img2 from "../assets/astronut.jpg";
-import img3 from "../assets/LH_Wallpaper.png";
-import img4 from "../assets/M351310.jpg";
-import img5 from "../assets/M351781.jpg";
-import img6 from "../assets/M351790.jpg";
-import img7 from "../assets/M35131010.jpg";
+import img1 from "../assets/jbl hording ad.png";
+import img2 from "../assets/jbl hording ad 2.png";
+import img3 from "../assets/jbl hording ad 3.png";
+import img4 from "../assets/insta ads posts.png";
+import img5 from "../assets/jbl ad posters.png";
+import img6 from "../assets/spidermen poster.png";
+import img7 from "../assets/salaar posters.png";
 import Dottedline from "../components/Dottedline";
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
@@ -98,13 +98,13 @@ function Home() {
       >
         <Dottedline ide={"link1"} type={"my work"}></Dottedline>
         <Grid
-          image1={img1} title1={"a"} descr1={"this is a"}
-          image2={img1} title2={"b"} descr2={"this is b"}
-          image3={img1} title3={"c"} descr3={"this is c"}
-          image4={img4} title4={"d"} descr4={"this is d"}
-          image5={img2} title5={"e"} descr5={"this is e"}
-          image6={img2} title6={"f"} descr6={"this is f"}
-          image7={img7} title7={"g"} descr7={"this is g"}
+          image1={img3} title1={"jbl"} descr1={"hoarding"}
+          image2={img2} title2={"jbl"} descr2={"hoarding"}
+          image3={img1} title3={"jbl"} descr3={"hoarding"}
+          image4={img4} title4={"jbl"} descr4={"social media (insta post)"}
+          image5={img5} title5={"jbl"} descr5={"website pop-up ad"}
+          image6={img6} title6={"spiderman pavitr prabhakar"} descr6={"vector art"}
+          image7={img7} title7={"salaar"} descr7={"poster design"}
         ></Grid>
       </motion.div>
       <motion.div

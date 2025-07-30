@@ -96,7 +96,7 @@ const Grid = ({
         <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-[#FFCDAD]">
               <div>
                 <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title1}</h3>
-                <p className="md:text-[20px] text-[13.8px] capitalize font-extralight">{descr1}</p>
+                <p className="md:text-[20px] text-[15px] capitalize font-extralight">{descr1}</p>
               </div>
             </div>
           )}
@@ -113,10 +113,10 @@ const Grid = ({
           onClick={() => changevalue("div2")}
         >
           {value.div2 && (
-          <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-[#FFCDAD]">
+          <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-[#FFCDAD] ">
               <div>
                 <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title2}</h3>
-                <p className="md:text-[20px] text-[13.8px] capitalize font-extralight">{descr2}</p>
+                <p className="md:text-[20px] text-[15px] capitalize font-extralight">{descr2}</p>
               </div>
             </div>
           )}
@@ -136,7 +136,7 @@ const Grid = ({
         <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-[#FFCDAD]">
               <div>
                 <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title3}</h3>
-                <p className="md:text-[20px] text-[13.8px] capitalize font-extralight">{descr3}</p>
+                <p className="md:text-[20px] text-[15px] capitalize font-extralight">{descr3}</p>
               </div>
             </div>
           )}
@@ -156,7 +156,7 @@ const Grid = ({
         <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-[#FFCDAD] ">
               <div>
                 <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title4}</h3>
-                <p className="md:text-[20px] text-[13.8px] capitalize font-extralight">{descr4}</p>
+                <p className="md:text-[20px] text-[15px] capitalize font-extralight">{descr4}</p>
               </div>
             </div>
           )}
@@ -176,13 +176,13 @@ const Grid = ({
         <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-[#FFCDAD]">
               <div>
                 <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title5}</h3>
-                <p className="md:text-[20px] text-[13.8px] capitalize font-extralight">{descr5} </p>
+                <p className="md:text-[20px] text-[15px] capitalize font-extralight">{descr5} </p>
               </div>
             </div>
           )}
           <img
             src={image5}
-            className={`h-[538.04px] w-[540px] rounded-sm ${
+            className={`h-[509.04px] w-[540px] rounded-sm ${
               value.div5 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
@@ -196,13 +196,13 @@ const Grid = ({
         <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-[#FFCDAD]">
               <div>
                 <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title6}</h3>
-                <p className="md:text-[20px] text-[13.8px] capitalize font-extralight">{descr6}</p>
+                <p className="md:text-[20px] text-[15px] capitalize font-extralight">{descr6}</p>
               </div>
             </div>
           )}
           <img
             src={image6}
-            className={`h-[538.04px] w-[540px] rounded-sm ${
+            className={`h-[593.04px] w-[540px] rounded-sm ${
               value.div6 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
@@ -216,7 +216,7 @@ const Grid = ({
         <div className="absolute inset-0 w-full h-full object-cover flex justify-center items-center font-extralight tracking-wider text-[#FFCDAD]">
               <div>
                 <h3 className="md:text-[45px] text-[35px] uppercase anton-font">{title7}</h3>
-                <p className="md:text-[20px] text-[13.8px] capitalize font-extralight">{descr7}</p>
+                <p className="md:text-[20px] text-[15px] capitalize font-extralight">{descr7}</p>
               </div>
             </div>
           )}
