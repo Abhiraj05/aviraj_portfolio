@@ -56,7 +56,7 @@ function Home() {
           />
           <div className="absolute inset-0 flex flex-col md:bg-black/30 bg-black/20">
             <NavBar></NavBar>
-            <div className="flex flex-col justify-center md:items-start md:mt-36 mt-36 md:px-36  items-center my-element">
+            <div className="flex flex-col justify-center md:items-start md:mt-32 mt-36 md:px-36  items-center my-element">
               <div className="text-white  anton-font  text-center uppercase md:text-[150px] tracking-widest text-8xl">
                 <h3 className="font-extrabold">avi</h3>
                 <h3 className="font-extrabold">raj</h3>
@@ -98,10 +98,10 @@ function Home() {
       >
         <Dottedline ide={"link1"} type={"my work"}></Dottedline>
         <Grid
-          image1={img3} title1={"jbl"} descr1={"hoarding"}
-          image2={img2} title2={"jbl"} descr2={"hoarding"}
-          image3={img1} title3={"jbl"} descr3={"hoarding"}
-          image4={img4} title4={"jbl"} descr4={"social media (insta post)"}
+          image1={img3} title1={"jbl"} descr1={"hoarding ad"}
+          image2={img2} title2={"jbl"} descr2={"hoarding ad"}
+          image3={img1} title3={"jbl"} descr3={"hoarding ad"}
+          image4={img4} title4={"jbl"} descr4={"social media (insta post ad)"}
           image5={img5} title5={"jbl"} descr5={"website pop-up ad"}
           image6={img6} title6={"spiderman pavitr prabhakar"} descr6={"vector art"}
           image7={img7} title7={"salaar"} descr7={"poster design"}
