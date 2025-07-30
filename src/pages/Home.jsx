@@ -125,7 +125,7 @@ function Home() {
           <div className="text-center pb-4">
             <p className="text-[#FFCDAD] capitalize md:text-[14.5px] text-[12.5px] inter-font flex justify-center items-center gap-2 tracking-wider">
               {/* &copy;all rights are reserved */}
-              made &hearts; with by <a href="https://in.linkedin.com/in/abhiraj-shilkar-408126217"><img src={Namelogo} alt="" /></a>
+              made with &hearts; by <a href="https://in.linkedin.com/in/abhiraj-shilkar-408126217"><img src={Namelogo} alt="" /></a>
             </p>
           </div>
         </footer>
