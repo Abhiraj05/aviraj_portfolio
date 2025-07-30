@@ -73,11 +73,11 @@ function Home() {
                 />
                 <CustomiseButtons
                   buttonimage={Instagram}
-                  link={"https://openai.com/index/chatgpt/"}
+                  link={"https://www.instagram.com/avirajshilkar05"}
                 />
                  <CustomiseButtons
                   buttonimage={X}
-                  link={"https://www.facebook.com/share/1G9W5e8ZWk/"}
+                  link={"https://x.com/AvirajShilkar"}
                 />
                 <CustomiseButtons
                   buttonimage={Facebook}
@@ -85,7 +85,7 @@ function Home() {
                 />
                   <CustomiseButtons
                   buttonimage={Whatsapp}
-                  link={"https://www.facebook.com/share/1G9W5e8ZWk/"}
+                  link={"https://wa.me/+918668364602"}
                 />
               </div>
             </div>
