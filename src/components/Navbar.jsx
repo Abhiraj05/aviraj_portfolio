@@ -13,7 +13,7 @@ function NavBar(){
   }, []);
     return(
         <>
-<nav className="flex md:justify-around  justify-between md:gap-[756px] items-center px-8 pt-4 pb-4 border-b-2 border-dashed border-white nav-element">
+<nav className="flex md:justify-around  justify-between md:gap-[756px] items-center px-8 pt-4 pb-4 border-b-[0.2px] border-dashed border-white nav-element">
             <div>
               <a
                 href="index.html"
