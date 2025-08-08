@@ -102,7 +102,7 @@ const Grid = ({
           )}
           <img
             src={image1}
-            className={`rounded-sm ${
+            className={` ${
               value.div1 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
@@ -122,7 +122,7 @@ const Grid = ({
           )}
           <img
             src={image2}
-            className={`rounded-sm ${
+            className={` ${
               value.div2 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
@@ -142,7 +142,7 @@ const Grid = ({
           )}
           <img
             src={image3}
-            className={`rounded-sm ${
+            className={` ${
               value.div3 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
@@ -162,7 +162,7 @@ const Grid = ({
           )}
           <img
             src={image4}
-            className={`rounded-sm ${
+            className={` ${
               value.div4 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
@@ -182,7 +182,7 @@ const Grid = ({
           )}
           <img
             src={image5}
-            className={`h-[509.04px] w-[540px] rounded-sm ${
+            className={`h-[509.04px] w-[540px]  ${
               value.div5 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
@@ -202,7 +202,7 @@ const Grid = ({
           )}
           <img
             src={image6}
-            className={`h-[593.04px] w-[540px] rounded-sm ${
+            className={`h-[593.04px] w-[540px]  ${
               value.div6 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
@@ -222,7 +222,7 @@ const Grid = ({
           )}
           <img
             src={image7}
-            className={`rounded-sm ${
+            className={` ${
               value.div7 ? "opacity-28" : "opacity-100"
             }`}
             alt=""
