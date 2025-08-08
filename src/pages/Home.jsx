@@ -3,7 +3,7 @@ import Linkdin from "../assets/Linkdin.svg";
 import Instagram from "../assets/instagram.svg";
 import Facebook from "../assets/Facebook.svg";
 import X from "../assets/x.svg";
-import Whatsapp from "../assets/whatsapp.svg"
+import Whatsapp from "../assets/whatsapp.svg";
 import backgroundimage from "../assets/constrast.png";
 import NavBar from "../components/Navbar";
 import Grid from "../components/Grid";
@@ -19,7 +19,14 @@ import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import Form from "../components/Form";
-import Namelogo from "../assets/namelogo.svg"
+import Namelogo from "../assets/namelogo.svg";
+import Videogrid from "../components/Videogrid"
+import vid1 from "../assets/Ad 1 (kissan orange) Final.mp4";
+import vid2 from "../assets/Ad 2 (kissan pineapple) Final.mp4";
+import vid3 from "../assets/Ad 3 (kissan mango) Final 3.mp4";
+import vid4 from "../assets/Ad 4 (kissan mixfruit) Final.mp4";
+import vid5 from "../assets/boat 5.mp4";
+import vid6 from "../assets/monaco biscuit (final rendering video) aviraj 03.mp4";
 
 function Home() {
   useEffect(() => {
@@ -39,8 +46,6 @@ function Home() {
       distance: "40px",
     });
   }, []);
-
-
 
   return (
     <>
@@ -75,7 +80,7 @@ function Home() {
                   buttonimage={Instagram}
                   link={"https://www.instagram.com/avirajshilkar05"}
                 />
-                 <CustomiseButtons
+                <CustomiseButtons
                   buttonimage={X}
                   link={"https://x.com/AvirajShilkar"}
                 />
@@ -83,7 +88,7 @@ function Home() {
                   buttonimage={Facebook}
                   link={"https://www.facebook.com/share/1G9W5e8ZWk/"}
                 />
-                  <CustomiseButtons
+                <CustomiseButtons
                   buttonimage={Whatsapp}
                   link={"https://wa.me/+918668364602"}
                 />
@@ -98,20 +103,56 @@ function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 3 }}
       >
-        <Dottedline  type={"about me"}></Dottedline>
+        <Dottedline type={"about me"}></Dottedline>
         <div className="md:px-10  text-center mt-7 px-5.5 md:text-[25px] text-[16px] text-[#FFCDAD] tuffy-font  md:tracking-widest tracking-wide footer-element capitalize">
-          <p className="text-justify">Hello, everyone ! My name is Aviraj Shilkar, and I am a passionate graphic designer and video editor. I love turning graphics into beautiful designs and transforming videos into engaging audiovisual art. I am committed to creating visually appealing and effective content that communicates ideas clearly and creatively.</p>
+          <p className="text-justify">
+            Hello, everyone ! My name is Aviraj Shilkar, and I am a passionate
+            graphic designer and video editor. I love turning graphics into
+            beautiful designs and transforming videos into engaging audiovisual
+            art. I am committed to creating visually appealing and effective
+            content that communicates ideas clearly and creatively.
+          </p>
         </div>
         <Dottedline ide={"link1"} type={"my works"}></Dottedline>
         <Grid
-          image1={img3} title1={"jbl"} descr1={"hoarding ad"}
-          image2={img2} title2={"jbl"} descr2={"hoarding ad"}
-          image3={img1} title3={"jbl"} descr3={"hoarding ad"}
-          image4={img4} title4={"jbl"} descr4={"social media (insta post ad)"}
-          image5={img5} title5={"jbl"} descr5={"website pop-up ad"}
-          image6={img6} title6={"spiderman pavitr prabhakar"} descr6={"vector art"}
-          image7={img7} title7={"salaar & kalki"} descr7={"poster design"}
+          image1={img3}
+          title1={"jbl"}
+          descr1={"hoarding ad"}
+          image2={img2}
+          title2={"jbl"}
+          descr2={"hoarding ad"}
+          image3={img1}
+          title3={"jbl"}
+          descr3={"hoarding ad"}
+          image4={img4}
+          title4={"jbl"}
+          descr4={"social media (insta post ad)"}
+          image5={img5}
+          title5={"jbl"}
+          descr5={"website pop-up ad"}
+          image6={img6}
+          title6={"spiderman pavitr prabhakar"}
+          descr6={"vector art"}
+          image7={img7}
+          title7={"salaar & kalki"}
+          descr7={"poster design"}
         ></Grid>
+        <Dottedline ide={"link"} type={"my ads"}></Dottedline>
+        <Videogrid
+          v1={vid1}
+          v2={vid2}
+          v3={vid3}
+          v4={vid4}
+          v5={vid5}
+          v6={vid6}
+          title1={"ad 1 kissan orange"}
+          title2={"ad 2 kissan pinapple"}
+          title3={"ad 3 kissan mango"}
+          title4={"ad 4 kissan mixfruit"}
+          title5={"boat animation"}
+          title6={"monaco biscuit ad"}
+
+        ></Videogrid>
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}
@@ -119,19 +160,22 @@ function Home() {
         transition={{ duration: 3 }}
       >
         <Dottedline ide={"link2"} type={"contact"}></Dottedline>
-        <Form placeholder1={"your name"}
-              placeholder2={"your email"}
-              placeholder3={"your message"}
+        <Form
+          placeholder1={"your name"}
+          placeholder2={"your email"}
+          placeholder3={"your message"}
         ></Form>
         <footer className="mt-10 bg-[#02589b] pt-10 footer-element">
           <h3 className="text-[#FFCDAD] anton-font  font-medium uppercase md:text-[30px] text-[20px] tracking-widest text-center mb-10">
-            
             aviraj shilkar
           </h3>
           <div className="text-center pb-4">
             <p className="text-[#FFCDAD] capitalize md:text-[14.5px] text-[12.8px] tuffy-font flex justify-center items-center gap-2 tracking-wider">
               {/* &copy;all rights are reserved */}
-              made with &hearts; by <a href="https://github.com/Abhiraj05"><img src={Namelogo} alt="" /></a>
+              made with &hearts; by{" "}
+              <a href="https://github.com/Abhiraj05">
+                <img src={Namelogo} alt="" />
+              </a>
             </p>
           </div>
         </footer>
