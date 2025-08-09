@@ -20,13 +20,13 @@ import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import Form from "../components/Form";
 import Namelogo from "../assets/namelogo.svg";
-// import Videogrid from "../components/Videogrid"
-// import vid1 from "../assets/Ad 1 (kissan orange) Final.mp4";
-// import vid2 from "../assets/Ad 2 (kissan pineapple) Final.mp4";
-// import vid3 from "../assets/Ad 3 (kissan mango) Final 3.mp4";
-// import vid4 from "../assets/Ad 4 (kissan mixfruit) Final.mp4";
-// import vid5 from "../assets/boat 5.mp4";
-// import vid6 from "../assets/monaco biscuit (final rendering video) aviraj 03.mp4";
+import Videogrid from "../components/Videogrid"
+import vid1 from "../assets/11.png";
+import vid2 from "../assets/12.png";
+import vid3 from "../assets/13.png";
+import vid4 from "../assets/14.png";
+import vid5 from "../assets/15.png";
+import vid6 from "../assets/16.png";
 
 function Home() {
   useEffect(() => {
@@ -137,11 +137,11 @@ function Home() {
           title7={"salaar & kalki"}
           descr7={"poster design"}
         ></Grid>
-        {/* <Dottedline ide={"link"} type={"my ads"}></Dottedline>
+        <Dottedline ide={"link"} type={"my ads"}></Dottedline>
         <Videogrid
-          v1={vid1}
-          v2={vid2}
-          v3={vid3}
+          v1={vid2}
+          v2={vid3}
+          v3={vid1}
           v4={vid4}
           v5={vid5}
           v6={vid6}
@@ -150,9 +150,17 @@ function Home() {
           title3={"ad 3 kissan mango"}
           title4={"ad 4 kissan mixfruit"}
           title5={"boat animation"}
-          title6={"monaco biscuit ad"} */}
+          title6={"monaco biscuit ad"} 
+           a1={"https://drive.google.com/file/d/1buWqZuAxxN2PZjJVCT969oodW2MOcKT3/view?usp=sharing"}
+           a2={"https://drive.google.com/file/d/1MZNEYZjy7bRH8uA8qSqmbg8LW8z8cLm3/view?usp=sharing"}
+           a3={"https://drive.google.com/file/d/1Im576n_a5RPSTMxgfdXbFz5EdpsD9zqT/view?usp=sharing"}
+           a4={"https://drive.google.com/file/d/1yfzRj4OfedO4EL-LAc52a5QtO9GzOqiu/view?usp=sharing"}
+           a5={"https://drive.google.com/file/d/1yb9459T-TxMAkc1gdMrMvHJlp3mg2sRc/view?usp=sharing"}
+           a6={"https://drive.google.com/file/d/1oxr0xxUxTWGNtS5kKuLmXizAEjlGyZB0/view?usp=sharing"}
 
-        {/* ></Videogrid> */}
+
+
+      ></Videogrid>
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}

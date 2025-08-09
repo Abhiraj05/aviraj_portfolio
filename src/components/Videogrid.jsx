@@ -14,10 +14,8 @@ const Videogrid = ({
   title4,
   title5,
   title6,
-
-
+  a1,a2,a3,a4,a5,a6
 }) => {
-  
   useEffect(() => {
     ScrollReveal().reveal(".grid-element-r", {
       delay: 300,
@@ -48,7 +46,9 @@ const Videogrid = ({
     <>
       <div className="flex-wrap justify-center items-center md:grid md:grid-cols-3 md:gap-4 text-center mt-10 md:px-10 px-4.5 ">
         <div className="w-full h-full mb-6 md:mb-1 grid-element-r">
-         <img src={v1} alt="" />
+          <a href={a1}>
+            <img src={v1} alt="" />
+          </a>
           <div>
             <h3 className="md:text-[32px] text-[20px] capitalize text-[#FFCDAD] tuffy-font mt-2">
               {title1}
@@ -57,7 +57,9 @@ const Videogrid = ({
         </div>
 
         <div className="w-full h-full mb-6 md:mb-1 md:grid-element-t grid-element-l">
-         <img src={v2}  alt="" />
+          <a href={a2}>
+            <img src={v2} alt="" />
+          </a>
           <div>
             <h3 className="md:text-[32px] text-[20px] capitalize text-[#FFCDAD] tuffy-font mt-2">
               {title2}
@@ -66,7 +68,9 @@ const Videogrid = ({
         </div>
 
         <div className="w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-r">
-          <img src={v3}  alt="" />
+          <a href={a3}>
+            <img src={v3} alt="" />
+          </a>
           <div>
             <h3 className="md:text-[32px] text-[20px] capitalize text-[#FFCDAD] tuffy-font mt-2">
               {title3}
@@ -75,7 +79,9 @@ const Videogrid = ({
         </div>
 
         <div className="md:row-span-1 w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-r">
-          <img src={v4}  alt="" />
+          <a href={a4}>
+            <img src={v4} alt="" />
+          </a>
           <div>
             <h3 className="md:text-[32px] text-[20px] capitalize text-[#FFCDAD] tuffy-font mt-2">
               {title4}
@@ -84,8 +90,9 @@ const Videogrid = ({
         </div>
 
         <div className="md:row-span-1 md:w-[468px] h-full mb-6 md:mb-1 md:grid-element-l grid-element-r">
-           <img src={v5}  alt="" />
-
+          <a href={a5}>
+            <img src={v5} alt="" />
+          </a>
           <div>
             <h3 className="md:text-[32px] text-[20px] capitalize text-[#FFCDAD] tuffy-font mt-2">
               {title5}
@@ -93,10 +100,10 @@ const Videogrid = ({
           </div>
         </div>
 
-        
         <div className="md:row-span-1 w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-r">
-          <img src={v1}  alt="" />
-            
+          <a href={a6}>
+            <img src={v6} alt="" />
+          </a>
           <div>
             <h3 className="md:text-[32px] text-[20px] capitalize text-[#FFCDAD] tuffy-font mt-2">
               {title6}
