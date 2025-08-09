@@ -41,11 +41,22 @@ const Videogrid = ({
       origin: "top",
       distance: "40px",
     });
+
+  }, []);
+
+  useEffect(() => {
+    ScrollReveal().reveal(".grid-element-b", {
+      delay: 300,
+      duration: 800,
+      origin: "top",
+      distance: "40px",
+    });
+
   }, []);
   return (
     <>
       <div className="flex-wrap justify-center items-center md:grid md:grid-cols-3 md:gap-4 text-center mt-10 md:px-10 px-4.5 ">
-        <div className="w-full h-full mb-6 md:mb-1 grid-element-r">
+        <div className="w-full h-full mb-6 md:mb-1 grid-element-r md:grid-element-l">
           <a href={a1}>
             <img src={v1} alt="" />
           </a>
@@ -56,7 +67,7 @@ const Videogrid = ({
           </div>
         </div>
 
-        <div className="w-full h-full mb-6 md:mb-1 md:grid-element-t grid-element-l">
+        <div className="w-full h-full mb-6 md:mb-1 md:grid-element-t grid-element-l md:grid-element-t">
           <a href={a2}>
             <img src={v2} alt="" />
           </a>
@@ -67,7 +78,7 @@ const Videogrid = ({
           </div>
         </div>
 
-        <div className="w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-r">
+        <div className="w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-r md:grid-element-r">
           <a href={a3}>
             <img src={v3} alt="" />
           </a>
@@ -78,7 +89,7 @@ const Videogrid = ({
           </div>
         </div>
 
-        <div className="md:row-span-1 w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-r">
+        <div className="md:row-span-1 w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-l">
           <a href={a4}>
             <img src={v4} alt="" />
           </a>
@@ -89,7 +100,7 @@ const Videogrid = ({
           </div>
         </div>
 
-        <div className="md:row-span-1 md:w-[468px] h-full mb-6 md:mb-1 md:grid-element-l grid-element-r">
+        <div className="md:row-span-1 md:w-[468px] h-full mb-6 md:mb-1 md:grid-element-b grid-element-r">
           <a href={a5}>
             <img src={v5} alt="" />
           </a>
@@ -100,7 +111,7 @@ const Videogrid = ({
           </div>
         </div>
 
-        <div className="md:row-span-1 w-full h-full mb-6 md:mb-1 md:grid-element-l grid-element-r">
+        <div className="md:row-span-1 w-full h-full mb-6 md:mb-1 md:grid-element-r grid-element-l">
           <a href={a6}>
             <img src={v6} alt="" />
           </a>
